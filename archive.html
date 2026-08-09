@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Archive: A record of frontend experiments, recreations, projects, and portfolio iterations by Muhammad Huzaifa."
+    />
+    <meta name="theme-color" content="#0d0e12" />
+    <meta property="og:title" content="The Archive - Muhammad Huzaifa" />
+    <meta
+      property="og:description"
+      content="The Archive: A record of frontend experiments, recreations, projects, and portfolio iterations by Muhammad Huzaifa."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://huzaifa-portfolio.pages.dev/assets/og-image.webp"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Archive - Muhammad Huzaifa" />
+    <meta
+      name="twitter:description"
+      content="The Archive: A record of frontend experiments, recreations, projects, and portfolio iterations by Muhammad Huzaifa."
+    />
+    <script>
+      try {
+        const theme = localStorage.getItem("theme");
+        if (theme) document.documentElement.dataset.theme = theme;
+      } catch {}
+    </script>
+    <meta
+      name="twitter:image"
+      content="https://huzaifa-portfolio.pages.dev/assets/og-image.webp"
+    />
+    <link
+      rel="canonical"
+      href="https://huzaifa-portfolio.pages.dev/archive.html"
+    />
+    <link
+      id="apple-touch-icon"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon-dark.png"
+    />
+    <link
+      id="favicon-ico"
+      rel="icon"
+      type="image/x-icon"
+      href="favicon/favicon-dark.ico"
+    />
+    <link
+      id="favicon-32"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32-dark.png"
+    />
+    <link
+      id="favicon-16"
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16-dark.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/terminal.css" />
+    <link rel="stylesheet" href="css/archive.css" />
+    <title>The Archive - Muhammad Huzaifa</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "The Archive",
+        "url": "https://huzaifa-portfolio.pages.dev/archive.html",
+        "author": { "@type": "Person", "name": "Muhammad Huzaifa" }
+      }
+    </script>
+  </head>
+  <body class="archive-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Muhammad Huzaifa, home"
+        >MH<span>.</span></a
+      >
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span></span><span></span><span></span
+        ><span class="sr-only">Open menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a class="is-active" href="archive.html" aria-current="page">Archive</a>
+        <a
+          class="nav-resume"
+          href="docs/Muhammad_Huzaifa_Resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          >Resume <i class="ri-arrow-right-up-line" aria-hidden="true"></i
+        ></a>
+      </nav>
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Switch to light theme"
+        title="Toggle color theme"
+      ></button>
+    </header>
+    <main id="main">
+      <section class="archive-hero section">
+        <p class="eyebrow">04 <span aria-hidden="true">/</span> The Archive</p>
+        <h1>
+          And here&rsquo;s everything else I&rsquo;ve built along the way.
+        </h1>
+        <p>The Archive is where the journey lives.</p>
+        <p>
+          This is where I keep the experiments, recreations, learning projects,
+          and smaller builds that show how I got here.
+        </p>
+      </section>
+      <section class="archive-browser section" aria-labelledby="archive-title">
+        <div class="archive-heading">
+          <div>
+            <p class="eyebrow">Browse the collection</p>
+            <h2 id="archive-title">The Archive</h2>
+          </div>
+          <p id="archive-results">
+            Welcome to The Archive — a record of the projects, experiments, and
+            iterations that shaped how I build.
+          </p>
+          <p id="archive-filter-status" class="sr-only" aria-live="polite"></p>
+        </div>
+        <div
+          class="archive-filters"
+          role="group"
+          aria-label="Filter archive projects"
+          id="archive-filters"
+        ></div>
+        <div id="archive-content"></div>
+        <aside class="archive-more" aria-labelledby="archive-more-title">
+          <div class="archive-more__mark" aria-hidden="true">
+            <i class="ri-add-line"></i>
+          </div>
+          <div>
+            <p class="archive-more__eyebrow">Still growing</p>
+            <h2 id="archive-more-title">The Archive isn't finished.</h2>
+            <p>
+              New experiments and projects will find their way here over time.
+            </p>
+          </div>
+        </aside>
+      </section>
+      <section
+        class="archive-featured-cta section"
+        aria-label="Featured projects"
+      >
+        <p>
+          <strong>Looking for my featured work?</strong> <br />
+          Head back to the projects chosen for the front page.
+        </p>
+        <a class="button button-secondary" href="index.html#projects"
+          >View featured projects
+          <i class="ri-arrow-right-line" aria-hidden="true"></i
+        ></a>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-copy">
+        <p>
+          Designed &amp; developed by Muhammad Huzaifa
+          <span>&copy; <span id="year"></span></span>
+        </p>
+        <p class="footer-stack">
+          Built with HTML, CSS &amp; JavaScript &middot; Deployed on Cloudflare
+          Pages
+        </p>
+      </div>
+      <button
+        class="terminal-hint"
+        type="button"
+        data-terminal-trigger
+        aria-label="Open command terminal"
+      >
+        <span class="terminal-hint__keys">[ CTRL ] + [ / ]</span>
+        <i class="ri-terminal-box-line" aria-hidden="true"></i>
+      </button>
+      <nav class="social-links social-links--footer" aria-label="Social links">
+        <a
+          href="https://www.github.com/HuzaifaAkhtar2"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+          ><i class="ri-github-line" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/muhammad-huzaifa24/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
+          ><i class="ri-linkedin-box-line" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.codepen.io/MuhammadHuzaifa"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="CodePen"
+          ><i class="ri-codepen-line" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/huzaifas_workspace/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Instagram"
+          ><i class="ri-instagram-line" aria-hidden="true"></i
+        ></a>
+      </nav>
+      <a href="#main"
+        >Back to top <i class="ri-arrow-up-line" aria-hidden="true"></i
+      ></a>
+    </footer>
+    <script type="module" src="js/archive.js"></script>
+  </body>
+</html>

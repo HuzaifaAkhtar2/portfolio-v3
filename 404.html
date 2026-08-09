@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#0d0e12" />
+    <link
+      id="apple-touch-icon"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon-dark.png"
+    />
+    <link
+      id="favicon-ico"
+      rel="icon"
+      type="image/x-icon"
+      href="favicon/favicon-dark.ico"
+    />
+    <link
+      id="favicon-32"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32-dark.png"
+    />
+    <link
+      id="favicon-16"
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16-dark.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <script>
+      try {
+        const theme = localStorage.getItem("theme");
+        if (theme) document.documentElement.dataset.theme = theme;
+      } catch {}
+    </script>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/404.css" />
+    <title>Page not found — Muhammad Huzaifa</title>
+  </head>
+  <body class="error-page">
+    <main class="error-page__content section">
+      <a class="brand" href="index.html" aria-label="Muhammad Huzaifa, home"
+        >MH<span>.</span></a
+      >
+      <button
+        class="theme-toggle error-page__theme-toggle"
+        type="button"
+        aria-label="Switch to light theme"
+        title="Toggle color theme"
+      ></button>
+      <p class="eyebrow">404 / Route not found</p>
+      <h1>This page went somewhere else.</h1>
+      <p>The link may be old, mistyped, or no longer part of this portfolio.</p>
+      <div class="error-page__actions">
+        <a class="button button-primary" href="index.html"
+          >Back home <i class="ri-arrow-right-line" aria-hidden="true"></i
+        ></a>
+        <a class="button button-secondary" href="archive.html"
+          >Open The Archive
+          <i class="ri-arrow-right-up-line" aria-hidden="true"></i
+        ></a>
+      </div>
+    </main>
+    <script type="module" src="js/404.js"></script>
+  </body>
+</html>

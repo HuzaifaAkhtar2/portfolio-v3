@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/jetbrains-mono-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../assets/fonts/jetbrains-mono-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/poppins-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../assets/fonts/poppins-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../assets/fonts/poppins-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/poppins-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "remixicon";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/remixicon.woff2") format("woff2");
+}
+
+[class^="ri-"],
+[class*=" ri-"] {
+  font-family: "remixicon" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ri-add-line::before {
+  content: "\ea13";
+}
+.ri-arrow-down-line::before {
+  content: "\ea4c";
+}
+.ri-arrow-right-line::before {
+  content: "\ea6c";
+}
+.ri-arrow-right-up-line::before {
+  content: "\ea70";
+}
+.ri-arrow-up-line::before {
+  content: "\ea76";
+}
+.ri-checkbox-blank-line::before {
+  content: "\eb7f";
+}
+.ri-close-line::before {
+  content: "\eb99";
+}
+.ri-codepen-line::before {
+  content: "\ebb0";
+}
+.ri-github-line::before {
+  content: "\edcb";
+}
+.ri-information-line::before {
+  content: "\ee59";
+}
+.ri-instagram-line::before {
+  content: "\ee66";
+}
+.ri-linkedin-box-line::before {
+  content: "\eeb4";
+}
+.ri-loader-4-line::before {
+  content: "\eec6";
+}
+.ri-map-pin-2-line::before {
+  content: "\ef0a";
+}
+.ri-moon-line::before {
+  content: "\ef75";
+}
+.ri-sparkling-2-line::before {
+  content: "\f36b";
+}
+.ri-sun-line::before {
+  content: "\f1bf";
+}
+.ri-terminal-box-line::before {
+  content: "\f1f6";
+}
+.ri-time-line::before {
+  content: "\f20f";
+}

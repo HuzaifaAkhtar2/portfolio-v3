@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://huzaifa-portfolio.pages.dev/sitemap.xml

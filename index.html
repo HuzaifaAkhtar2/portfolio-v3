@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      try {
+        const theme = localStorage.getItem("theme");
+        if (theme) document.documentElement.dataset.theme = theme;
+      } catch {}
+    </script>
+    <link
+      id="apple-touch-icon"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon-dark.png"
+    />
+    <link
+      id="favicon-ico"
+      rel="icon"
+      type="image/x-icon"
+      href="favicon/favicon-dark.ico"
+    />
+    <link
+      id="favicon-32"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32-dark.png"
+    />
+    <link
+      id="favicon-16"
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16-dark.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <meta
+      name="description"
+      content="Frontend developer Muhammad Huzaifa's portfolio — featured projects, client work, interactive experiments, and a growing archive of web development projects."
+    />
+    <meta name="theme-color" content="#0d0e12" />
+    <meta property="og:title" content="Muhammad Huzaifa - Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Frontend projects, client work, interactive experiments, and the development journey behind them."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://huzaifa-portfolio.pages.dev/assets/og-image.webp"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Muhammad Huzaifa - Frontend Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Frontend projects, client work, interactive experiments, and the development journey behind them."
+    />
+    <meta
+      name="twitter:image"
+      content="https://huzaifa-portfolio.pages.dev/assets/og-image.webp"
+    />
+    <link rel="canonical" href="https://huzaifa-portfolio.pages.dev/" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/terminal.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Muhammad Huzaifa - Frontend Developer</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muhammad Huzaifa",
+        "jobTitle": "Frontend Developer",
+        "url": "https://huzaifa-portfolio.pages.dev/",
+        "email": "muhammad.huzaifa09@outlook.com",
+        "sameAs": [
+          "https://www.github.com/HuzaifaAkhtar2",
+          "https://www.linkedin.com/in/muhammad-huzaifa24/"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Muhammad Huzaifa, home"
+        >MH<span>.</span></a
+      >
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span></span><span></span><span></span
+        ><span class="sr-only">Open menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#projects">Projects</a><a href="#about">About</a
+        ><a href="#contact">Contact</a>
+        <a href="archive.html"
+          >Archive <i class="ri-arrow-right-up-line" aria-hidden="true"></i
+        ></a>
+        <a
+          class="nav-resume"
+          href="docs/Muhammad_Huzaifa_Resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          >Resume <i class="ri-arrow-right-up-line" aria-hidden="true"></i
+        ></a>
+      </nav>
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Switch to light theme"
+        title="Toggle color theme"
+      ></button>
+    </header>
+    <main id="main">
+      <section id="home" class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            Frontend developer
+            <span aria-hidden="true" class="distributor">/</span>
+            <i class="ri-map-pin-2-line" aria-hidden="true"></i> Building from
+            Pakistan
+          </p>
+          <h1>Building things I&rsquo;m proud to leave behind.</h1>
+          <p class="hero-intro">
+            I&rsquo;m Muhammad Huzaifa, a frontend developer who enjoys turning
+            ambitious designs into working interfaces. I learn by building —
+            from challenging recreations to real client work.
+          </p>
+          <p class="hero-tagline">
+            I&rsquo;ll take what I&rsquo;ve learned... <br />
+            and carve it into the internet&rsquo;s memory.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects"
+              >View projects
+              <i class="ri-arrow-down-line" aria-hidden="true"></i></a
+            ><a
+              class="button button-secondary"
+              href="docs/Muhammad_Huzaifa_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              >View resume
+              <i class="ri-arrow-right-up-line" aria-hidden="true"></i
+            ></a>
+            <nav
+              class="social-links social-links--hero"
+              aria-label="Social links"
+            >
+              <a
+                href="https://www.github.com/HuzaifaAkhtar2"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+                ><i class="ri-github-line" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/muhammad-huzaifa24/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                ><i class="ri-linkedin-box-line" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.codepen.io/MuhammadHuzaifa"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="CodePen"
+                ><i class="ri-codepen-line" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/huzaifas_workspace/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+                ><i class="ri-instagram-line" aria-hidden="true"></i
+              ></a>
+            </nav>
+          </div>
+        </div>
+        <!-- <figure class="hero-portrait">
+          <img
+            src="assets/profile-picture.webp"
+            alt="Portrait of Muhammad Huzaifa"
+            height="320"
+            width="320"
+          />
+        </figure> -->
+      </section>
+      <section id="projects" class="section projects-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">
+              01 <span aria-hidden="true">/</span> Selected work
+            </p>
+            <h2>Things I&rsquo;ve spent way too much time on.</h2>
+          </div>
+          <div class="section-aside">
+            <p class="section-summary">
+              Some started as experiments. Some became real projects. All of
+              them taught me something.
+            </p>
+            <p class="section-count">
+              <span id="project-count">04</span> projects
+            </p>
+          </div>
+        </div>
+        <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
+      </section>
+      <section id="about" class="section about-section">
+        <p class="eyebrow">
+          02 <span aria-hidden="true">/</span> A little context
+        </p>
+        <div class="about-grid">
+          <h2>I learn by building things I&rsquo;m not quite ready for.</h2>
+          <div>
+            <p>
+              I&rsquo;m a frontend developer focused on creating clean,
+              responsive interfaces and improving my skills through hands-on
+              projects. I enjoy taking an idea from a rough concept to something
+              that actually works — then going back and figuring out how to make
+              it better.
+            </p>
+            <p>
+              Most of what I know about frontend development came from trying to
+              recreate things I thought were way beyond my skill level — and
+              then figuring out why they worked.
+            </p>
+            <p>
+              HTML, CSS, and JavaScript are the foundation I keep coming back to
+              as I explore new tools and ways of building for the web.
+            </p>
+            <a class="text-link text-link--primary" href="#contact"
+              >Let&rsquo;s work together
+              <i class="ri-arrow-right-line" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <section class="enjoy-building" aria-labelledby="enjoy-building-title">
+          <p class="eyebrow">What I enjoy building</p>
+          <p id="enjoy-building-title">
+            Responsive interfaces, interactive experiences, and websites that
+            make me want to inspect the source code.
+          </p>
+        </section>
+        <section class="skills" aria-labelledby="skills-title">
+          <div class="skills-heading">
+            <p class="eyebrow">Core toolkit</p>
+            <h3 id="skills-title">My current toolkit.</h3>
+          </div>
+          <div class="skills-groups">
+            <div class="skill-group">
+              <h4>Core Technologies</h4>
+              <ul class="skill-tags">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (ES6)</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4>Tools</h4>
+              <ul class="skill-tags">
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>Chrome DevTools</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h4>Frontend</h4>
+              <ul class="skill-tags">
+                <li>Responsive Design</li>
+                <li>Flexbox</li>
+                <li>CSS Grid</li>
+                <li>Semantic HTML</li>
+                <li>Accessibility</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <ul class="principles">
+          <li><span>01</span> Build for people, not screenshots</li>
+          <li><span>02</span> Make it work everywhere</li>
+          <li><span>03</span> Sweat the details that matter</li>
+        </ul>
+      </section>
+      <section id="contact" class="section contact-section">
+        <p class="eyebrow">03 <span aria-hidden="true">/</span> Get in touch</p>
+        <h2>Let&rsquo;s build something<br /><em> worth remembering.</em></h2>
+        <div class="contact-grid">
+          <div>
+            <p>
+              Have a project, opportunity, or just an interesting idea? Send it
+              my way.
+            </p>
+            <a class="email-link" href="mailto:muhammad.huzaifa09@outlook.com"
+              >muhammad.huzaifa09@outlook.com
+              <i class="ri-arrow-right-up-line" aria-hidden="true"></i
+            ></a>
+          </div>
+          <form
+            id="contact-form"
+            class="contact-form"
+            novalidate
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="2c926306-fed4-42c1-bfce-c06f13e96733"
+            />
+            <input
+              class="form-botcheck"
+              type="checkbox"
+              name="botcheck"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+            />
+            <div class="form-intro">
+              <p>Send a message</p>
+            </div>
+            <div class="form-row">
+              <label
+                >Name<input
+                  name="name"
+                  autocomplete="name"
+                  required
+                  placeholder="John Smith" /></label
+              ><label
+                >Email<input
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  placeholder="hello@example.com"
+              /></label>
+            </div>
+            <label
+              >Message<textarea
+                name="message"
+                rows="4"
+                required
+                placeholder="Something you&rsquo;d like me to know?"
+              ></textarea></label
+            ><button class="button button-primary" type="submit">
+              Send message
+              <i class="ri-arrow-right-line" aria-hidden="true"></i>
+            </button>
+            <p id="form-status" class="form-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-copy">
+        <p>
+          Designed &amp; developed by Muhammad Huzaifa &copy;
+          <span id="year"></span>
+        </p>
+        <p class="footer-stack">
+          Built with HTML, CSS &amp; JavaScript &middot; Deployed on Cloudflare
+          Pages
+        </p>
+      </div>
+      <button
+        class="terminal-hint"
+        type="button"
+        data-terminal-trigger
+        aria-label="Open command terminal"
+      >
+        <span class="terminal-hint__keys">[ CTRL ] + [ / ]</span>
+        <i class="ri-terminal-box-line" aria-hidden="true"></i>
+      </button>
+      <nav class="social-links social-links--footer" aria-label="Social links">
+        <a
+          href="https://www.github.com/HuzaifaAkhtar2"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+          ><i class="ri-github-line" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/muhammad-huzaifa24/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
+          ><i class="ri-linkedin-box-line" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.codepen.io/MuhammadHuzaifa"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="CodePen"
+          ><i class="ri-codepen-line" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/huzaifas_workspace/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Instagram"
+          ><i class="ri-instagram-line" aria-hidden="true"></i
+        ></a>
+      </nav>
+      <a href="#home"
+        >Back to top <i class="ri-arrow-up-line" aria-hidden="true"></i
+      ></a>
+    </footer>
+    <dialog
+      id="project-modal"
+      class="project-modal"
+      aria-labelledby="modal-title"
+    >
+      <button
+        class="modal-close"
+        type="button"
+        aria-label="Close project details"
+      >
+        <i class="ri-close-line" aria-hidden="true"></i>
+      </button>
+      <div id="modal-content"></div>
+    </dialog>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
