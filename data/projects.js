@@ -98,7 +98,7 @@ export const projects = [
 
     tech: ["HTML", "CSS", "JavaScript"],
 
-    image: "assets/restaurant-website.webp",
+    image: "assets/britannia-restaurant-website.webp",
     accent: "green",
 
     client: "Britannia Restaurant",
@@ -163,8 +163,8 @@ export const projects = [
 
     recreation: false,
 
-    github: "https://github.com/HuzaifaAkhtar2/restaurant-website",
-    demo: "https://huzaifaakhtar2.github.io/restaurant-website/",
+    github: "https://github.com/HuzaifaAkhtar2/britannia-restaurant-website",
+    demo: "https://huzaifaakhtar2.github.io/britannia-restaurant-website/",
   },
 
   {
