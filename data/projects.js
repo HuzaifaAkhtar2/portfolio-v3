@@ -73,7 +73,7 @@ export const projects = [
       "This project began from a guided tutorial and was extended independently. It is an educational frontend recreation of Zentry.com and is not affiliated with or endorsed by Zentry.",
 
     github: "https://github.com/HuzaifaAkhtar2/zentry-clone",
-    demo: "https://huzaifa-zentry-clone.vercel.app/",
+    demo: "https://huzaifaakhtar2.github.io/zentry-clone/",
     tutorialBased: true,
     tutorialCreator: "MiladiCode",
     tutorialUrl: "https://www.youtube.com/watch?v=ukMPKm3cLns",
