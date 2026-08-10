@@ -222,7 +222,7 @@ export const archiveProjects = [
       "A tutorial-based responsive Beats-inspired product landing page featuring product specifications, multiple color variants, responsive navigation, active-section highlighting, real product links, and an email subscription form.",
     technologies: ["HTML", "CSS", "JavaScript"],
     image: "assets/product-landing-page.webp",
-    demo: "https://product-landing-page-seven-ebon.vercel.app/",
+    demo: "https://huzaifaakhtar2.github.io/product-landing-page/",
     source: "https://github.com/HuzaifaAkhtar2/product-landing-page",
     highlight: true,
     tutorialBased: true,
