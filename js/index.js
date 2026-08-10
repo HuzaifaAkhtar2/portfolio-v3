@@ -35,6 +35,24 @@ const tutorialAttribution = (project, className = "project-tutorial") => {
   return `<p class="${className}">Tutorial-based${creator ? ` &middot; Based on tutorial by${creator}` : ""}</p>`;
 };
 
+const projectCardActions = (project) => {
+  const actions = [];
+
+  if (project.demo) {
+    actions.push(
+      `<a href="${project.demo}" target="_blank" rel="noreferrer">Live Preview <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>`,
+    );
+  }
+
+  if (project.github) {
+    actions.push(
+      `<a href="${project.github}" target="_blank" rel="noreferrer">GitHub <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>`,
+    );
+  }
+
+  return actions.join("");
+};
+
 const renderProjects = () => {
   grid.innerHTML = projectsForDisplay
     .map(
@@ -58,14 +76,17 @@ const renderProjects = () => {
                 ${project.tech.map((item) => `<li>${item}</li>`).join("")}
               </ul>
 
-              <button
-                class="card-link"
-                type="button"
-                data-project="${project.id}"
-                aria-label="Read more about ${project.title}"
-              >
-                Read more
-              </button>
+              <div class="project-card__actions">
+                ${projectCardActions(project)}
+                <button
+                  class="card-link"
+                  type="button"
+                  data-project="${project.id}"
+                  aria-label="Read more about ${project.title}"
+                >
+                  Read more
+                </button>
+              </div>
             </div>
           </div>
         </article>
