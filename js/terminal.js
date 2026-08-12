@@ -77,6 +77,17 @@ export const initTerminal = ({ setTheme }) => {
 
   const addAchievements = () => {
     const entry = document.createElement("p");
+    const createCompletedAchievement = (text) => {
+      const icon = document.createElement("i");
+      const label = document.createElement("span");
+
+      icon.className = "ri-checkbox-line";
+      icon.setAttribute("aria-hidden", "true");
+      label.className = "sr-only";
+      label.textContent = "Completed: ";
+
+      return [label, icon, ` ${text}\n`];
+    };
     const incompleteIcon = document.createElement("i");
     const incompleteLabel = document.createElement("span");
 
@@ -87,7 +98,11 @@ export const initTerminal = ({ setTheme }) => {
     incompleteLabel.textContent = "Not yet completed: ";
 
     entry.append(
-      "ACHIEVEMENTS\n\n[✓] Built my first website\n[✓] Shipped real client work\n[✓] Experimented with Three.js\n[✓] Built Portfolio V3\n",
+      "ACHIEVEMENTS\n\n",
+      ...createCompletedAchievement("Built my first website"),
+      ...createCompletedAchievement("Shipped real client work"),
+      ...createCompletedAchievement("Experimented with Three.js"),
+      ...createCompletedAchievement("Built Portfolio V3"),
       incompleteLabel,
       incompleteIcon,
       " Carved something into the internet's memory.",
